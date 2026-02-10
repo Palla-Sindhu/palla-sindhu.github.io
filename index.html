@@ -3,85 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sindhu Palla | Portfolio</title>
+    <title>Priyanka Rebba | Portfolio</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
             margin: 0;
-            background-color: #f4f6f8;
+            background-color: #f4f6f9;
             color: #333;
         }
+
+        /* HEADER */
         header {
-            background-color: #1f4fd8;
-            color: white;
+            background-color: #2c3e50;
+            color: #ffffff;
             padding: 30px 20px;
-            text-align: center;
         }
-        header h1 {
-            margin-bottom: 5px;
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            text-align: left;
         }
-        header p {
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #ffffff;
+            background-color: #ccc;
+        }
+
+        .header-text h1 {
+            margin: 0 0 8px 0;
+        }
+
+        .header-text p {
             margin: 4px 0;
         }
-        header a {
-            color: #fff;
+
+        .header-text a {
+            color: #ffffff;
+            margin-right: 10px;
             text-decoration: underline;
-            margin: 0 8px;
         }
+
+        /* SECTIONS */
         section {
-            background: white;
+            background: #ffffff;
             margin: 20px;
             padding: 20px;
             border-radius: 8px;
         }
+
         h2 {
-            color: #1f4fd8;
+            color: #2c3e50;
             border-bottom: 2px solid #eee;
             padding-bottom: 5px;
         }
+
         ul {
             padding-left: 20px;
         }
+
         li {
-            margin-bottom: 6px;
+            margin-bottom: 8px;
         }
+
+        /* FOOTER */
         footer {
-            text-align: center;
-            padding: 15px;
             background-color: #222;
             color: white;
+            text-align: center;
+            padding: 15px;
             margin-top: 30px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .header-container {
+                text-align: center;
+            }
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Sindhu Palla</h1>
-    <p>B.Tech – Computer Science and Engineering</p>
-    <p>BVRIT Hyderabad College of Engineering for Women</p>
-    <p>
-        📞 +91-9391148352 | 
-        📧 22wh1a0549@bvrithyderabad.edu.in | 
-        📧 pallasindhu12@gmail.com
-    </p>
-    <p>
-        <a href="https://github.com/Palla-Sindhu" target="_blank">GitHub</a> |
-        <a href="https://linkedin.com/in/sindhu-palla-3a3569259/" target="_blank">LinkedIn</a>
-    </p>
+    <div class="header-container">
+        <!-- Profile Photo -->
+        <img src="profile.jpg" alt="Priyanka Rebba" class="profile-pic">
+
+        <!-- Header Text -->
+        <div class="header-text">
+            <h1>Priyanka Rebba</h1>
+            <p>B.Tech – Computer Science and Engineering</p>
+            <p>BVRIT Hyderabad College of Engineering for Women</p>
+            <p>
+                📧 22wh1a05j0@bvrithyderabad.edu.in <br>
+                📞 +91-9347485149
+            </p>
+            <p>
+                <a href="https://github.com/priyankarebba/" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/PRIYANKA%20REBBA/" target="_blank">LinkedIn</a>
+            </p>
+        </div>
+    </div>
 </header>
 
 <section>
     <h2>Education</h2>
     <ul>
-        <li><strong>B.Tech (CSE)</strong> – BVRIT Hyderabad College of Engineering for Women  
-            <br>CGPA: 8.48 (Current) | 2022 – Present
+        <li>
+            <strong>B.Tech in Computer Science and Engineering</strong><br>
+            BVRIT Hyderabad College of Engineering for Women<br>
+            CGPA: 8.61
         </li>
-        <li><strong>Intermediate</strong> – Narayana Junior College, Hydernagar  
-            <br>Percentage: 96.3% | 2022
+        <li>
+            <strong>Senior Secondary (State Board)</strong><br>
+            Sri Chaitanya Junior College<br>
+            Percentage: 97.7%
         </li>
-        <li><strong>Secondary School</strong> – Sri Chaitanya Techno Curriculum School, Kodad  
-            <br>Percentage: 100% | 2020
+        <li>
+            <strong>Secondary (Telangana Board)</strong><br>
+            Sri Chaitanya Techno School<br>
+            CGPA: 10
+        </li>
+    </ul>
+</section>
+
+<section>
+    <h2>Experience</h2>
+    <ul>
+        <li>
+            <strong>Support Engineer Intern – Amazon</strong><br>
+            July 14, 2025 – December 19, 2025<br>
+            Developing a command-line Harbinger Agentic Solution integrating AWS Bedrock.
         </li>
     </ul>
 </section>
@@ -90,18 +150,19 @@
     <h2>Projects</h2>
     <ul>
         <li>
-            <strong>Real-Time Emotion Detection</strong> (May 2024 – Jul 2024)<br>
-            Developed a real-time emotion detection system using facial recognition and machine learning.  
-            Implemented CNN-based deep learning models using Python and OpenCV to classify emotions such as happiness, sadness, and anger.
+            <strong>MarketMind: Customer Segmentation using LLMs</strong><br>
+            AI-powered pipeline using LLMs and clustering for customer segmentation.<br>
+            <em>Tech:</em> Hugging Face, KMeans, PCA, t-SNE, Python, scikit-learn
         </li>
         <li>
-            <strong>AlgoWell</strong> (Sept 2024 – Dec 2024)<br>
-            Developed a fitness-oriented web application using the MERN stack to promote health and wellness with an engaging user experience.
+            <strong>HouseEase</strong><br>
+            Full-stack property browsing and booking platform.<br>
+            <em>Tech:</em> MongoDB, React.js, Node.js, Express.js, HTML, CSS
         </li>
         <li>
-            <strong>Cyber Globe – Global Network Traffic Monitoring</strong> (Feb 2025 – May 2025)<br>
-            Built a web-based tool for real-time network traffic analysis and threat visualization using PCAP files and IP geolocation.  
-            Integrated interactive heatmaps and threat detection for enhanced security insights.
+            <strong>Face Mask Detection</strong><br>
+            CNN model with 97% accuracy for face mask detection.<br>
+            <em>Tech:</em> TensorFlow, Keras, NumPy, scikit-learn
         </li>
     </ul>
 </section>
@@ -109,50 +170,25 @@
 <section>
     <h2>Skills</h2>
     <ul>
-        <li><strong>Programming:</strong> Java, Python, C</li>
-        <li><strong>Core Subjects:</strong> DSA, OOPs, DBMS, OS, Machine Learning</li>
-        <li><strong>Web Development:</strong> MERN Stack, HTML, CSS, SQL</li>
-        <li><strong>Tools & OS:</strong> Windows, Visual Studio, Git, Jupyter Notebook</li>
-        <li><strong>Languages:</strong> English, Telugu, Hindi, French</li>
+        <li><strong>Machine Learning:</strong> TensorFlow, Keras, scikit-learn, NumPy, Pandas, LLMs</li>
+        <li><strong>Full Stack:</strong> React.js, Node.js, Express.js, MongoDB</li>
+        <li><strong>Languages:</strong> Java, Python, C</li>
+        <li><strong>Soft Skills:</strong> Communication, Problem Solving, Teamwork</li>
     </ul>
 </section>
 
 <section>
-    <h2>Certifications & Courses</h2>
+    <h2>Extracurricular Activities</h2>
     <ul>
-        <li>DSA – Being Zero</li>
-        <li>Machine Learning – NASSCOM</li>
-        <li>Data Analytics – Infosys Springboard</li>
-        <li>AWS – Basics</li>
-        <li>Full Stack Web Development – TalentSprint</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Hackathons & Achievements</h2>
-    <ul>
-        <li>All India Women’s Hackathon 2023</li>
-        <li>Shooting Stars Community Hackathon</li>
-        <li>HackOn With Amazon – Season 4 (Participation)</li>
-        <li>Cyber Security Fundamentals – IBM SkillsBuild</li>
-        <li>Programming Basics – Great Learning</li>
-        <li>Deep Learning – Great Learning</li>
-        <li>Full Stack Java Development (MERN) – Atenas Code</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Extracurricular Activities & Hobbies</h2>
-    <ul>
-        <li>Student Volunteer – Miyapur Run Marathon</li>
-        <li>Badminton, Basketball</li>
-        <li>Listening to Music</li>
+        <li>Volunteer – Organized college events</li>
+        <li>Sports – Badminton</li>
     </ul>
 </section>
 
 <footer>
-    <p>© 2026 Sindhu Palla | Portfolio</p>
+    <p>© 2026 Priyanka Rebba | Portfolio</p>
 </footer>
 
 </body>
 </html>
+
